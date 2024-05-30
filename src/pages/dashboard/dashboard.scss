@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.gridadj {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+}
+
+.gridadj {
+  grid-gap: 7px;
+  padding-top: 15%;
+  margin-left: 5%;
+}
+
+.gridadj .first,
+.second,
+.third {
+  height: 20px;
+}
+
+.btn {
+  display: block;
+  height: 150px;
+  width: 148px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+
+}
+
+.btn.onee {
+  background-color: #12467f;
+}
+
+.btn.two {
+  background-color: #630460;
+}
+
+.btn.three {
+  background-color: #00a651;
+}
+
+.btn.four {
+  background-color: #ed1c24;
+}
+
+.btn.five {
+  background-color: #605ca8;
+}
+
+.btn.six {
+  background-color: #e28d18;
+}

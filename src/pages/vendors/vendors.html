@@ -1,0 +1,38 @@
+<!Doctype html>
+<!--
+  Generated template for the VendorPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar>
+      <ion-title class="adjusttitle">Vendor</ion-title>
+      <ion-buttons>
+          <button ion-button icon-only menuToggle color="menu-bgnd">
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        </ion-buttons>   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="masters">
+    <ion-searchbar placeholder="e.g E-BIRR" [(ngModel)]="searchVendor" (ionInput)="searchVendors($event)"></ion-searchbar>
+    <hr>
+    <ion-list>
+        <ion-item class="masters" (click)="viewVendor()" *ngFor="let vendor of vendors">
+          <ion-avatar item-start>
+            <img src="../../assets/imgs/money.png">
+          </ion-avatar>
+          <ion-label>
+            <a href="#">{{ vendor }}</a><br>
+            <p>AC: VN0012346</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+      <ion-fab bottom right>
+        <button ion-fab mini color="primary" (click)="addVendor()">
+          <ion-icon name="add"></ion-icon>
+        </button>
+      </ion-fab>
+</ion-content>

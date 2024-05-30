@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<ion-header>
+  <ion-toolbar>
+      <ion-title class="adjusttitle">Journal</ion-title>
+    <ion-buttons>
+      <button ion-button icon-only menuToggle color="menu-bgnd">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="masters">
+  <ion-searchbar placeholder="e.g J003AZ" [(ngModel)]="searchJournal" (ionInput)="searchJournals($event)"></ion-searchbar>
+  <hr>
+  <ion-list>
+    <ion-item class="masters" (click)="viewJournal()" *ngFor="let journal of journals">
+      <ion-avatar item-start>
+        <img src="../../assets/imgs/journal.png">
+      </ion-avatar>
+      <ion-label>
+        <a href="#">{{ journal }}</a><br>
+        <p>Date: 09-09-2018</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-fab bottom right>
+    <button ion-fab mini color="primary" (click)="addJournal()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
+</ion-content>

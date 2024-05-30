@@ -1,0 +1,21 @@
+<ion-content padding class="homepage-picture">
+  <div class="logo-div">
+    <img src="../../assets/imgs/diamond.png">
+  </div>
+  <p class="logo-text">
+    Crystal Cheque 
+  </p>
+  <ion-item class="rounded-fields" no-lines>
+    <ion-label><img src="../../assets/imgs/envelope.png"></ion-label>
+    <ion-input type="text" placeholder="Email       " class="text-input" text-center></ion-input>
+  </ion-item>
+  <ion-item class="rounded-fields" no-lines>
+    <ion-label><img src="../../assets/imgs/password.png"></ion-label>
+    <ion-input type="password" placeholder="Password" text-center item-right>
+      <ion-icon name="eye"></ion-icon>
+    </ion-input>  
+  </ion-item>  
+  <button ion-button round full large class="round-buttons">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login</button>
+  <button ion-button round full large class="round-buttons" (click)="register()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register</button>
+</ion-content>         
+           

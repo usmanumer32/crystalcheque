@@ -1,0 +1,40 @@
+<!Doctype html>
+<!--
+  Generated template for the AccountPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar>  
+      <ion-title class="adjusttitle">Account</ion-title>  
+    <ion-buttons>
+      <button ion-button icon-only menuToggle color="menu-bgnd">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="masters">
+  <ion-searchbar placeholder="e.g ZETEN" [(ngModel)]="searchText" (ionInput)="searchAccounts($event)"></ion-searchbar>
+  <hr>
+  <ion-list>
+    <ion-item class="masters" (click)="viewAccount()" *ngFor="let account of accounts">
+      <ion-avatar item-start>
+        <img src="../../assets/imgs/account_icon.png">
+      </ion-avatar>
+      <ion-label>
+        <a href="#">{{ account }}</a>
+        <br>
+        <p>AC: 0123456789</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+   <ion-fab bottom right>
+        <button ion-fab mini color="primary" (click)="addAccount()">
+          <ion-icon name="add"></ion-icon>
+        </button>
+      </ion-fab>
+</ion-content>

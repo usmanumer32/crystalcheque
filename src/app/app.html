@@ -1,0 +1,60 @@
+<!DOCTYPE <!DOCTYPE html>
+<ion-menu [content]="content">
+  <ion-content>
+    <ion-list>
+      <ion-list-header class="menu_header">
+        CRYSTAL <img src="../assets/imgs/crystal.png"> CHEQUE
+      </ion-list-header>
+
+      <button ion-item (click)="openHomePage()" color="menu-btn">
+        <img src="../assets/imgs/dashboard.png">&nbsp;
+        Dashboard
+      </button>
+
+      <button ion-item (click)="openJournal()" color="menu-btn">
+        <img src="../assets/imgs/jmenu.png">&nbsp;
+        Journal
+      </button>
+
+      <button ion-item (click)="openBank()" color="menu-btn">
+        <img src="../assets/imgs/bank.png">&nbsp;
+        Bank
+      </button>
+
+      <button ion-item (click)="openAccount()" color="menu-btn">
+        <img src="../assets/imgs/account.png">&nbsp;
+        Account
+      </button>
+
+      <button ion-item (click)="openVendor()" color="menu-btn">
+        <img src="../assets/imgs/vendor.png">&nbsp;
+        Vendor
+      </button>
+
+      <button ion-item (click)="openCompany()" color="menu-btn">
+        <img src="../assets/imgs/company.png">&nbsp;
+        Company
+      </button>
+
+      <button ion-item (click)="openUsers()" color="menu-btn">
+
+        <img src="../assets/imgs/users.png">&nbsp;
+        User
+      </button>
+
+      <button ion-item (click)="openSignOut()" color="menu-btn">
+
+        <img src="../assets/imgs/settings.png">&nbsp;
+        Setting
+      </button>
+
+      <button ion-item (click)="openSignOut()" color="menu-btn">
+
+        <img src="../assets/imgs/signout.png">&nbsp;
+        Sign Out
+      </button>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-nav [root]="rootPage" #content></ion-nav>

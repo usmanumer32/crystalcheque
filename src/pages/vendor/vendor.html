@@ -1,0 +1,44 @@
+<!Doctype html>
+<ion-header>
+  <ion-navbar>
+    <ion-title>Vendor Setup</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="content-background">
+
+  <div class="blacklogo-div">
+    <img src="../../assets/imgs/blackdiamond.png">
+  </div>
+
+  <p class="blacklogo-text">Crystal Cheque</p>
+
+  <ion-item class="rounded-fields" no-lines>
+    <ion-input type="text" placeholder="Vendor Name" class="placeholder-color" text-center></ion-input>
+  </ion-item>
+
+  <ion-item class="rounded-fields" no-lines>
+    <ion-input type="text" placeholder="Account No" class="placeholder-color" text-center></ion-input>
+  </ion-item>
+
+  <ion-item class="rounded-fields" no-lines>
+    <ion-input type="text" placeholder="Manager" class="placeholder-color" text-center></ion-input>
+  </ion-item>
+
+  <ion-item class="rounded-fields" no-lines>
+    <ion-input type="text" placeholder="Address" class="placeholder-color" text-center></ion-input>
+  </ion-item>
+
+  <ion-item class="rounded-fields" no-lines>
+    <ion-input type="text" placeholder="Phone No" class="placeholder-color" text-center></ion-input>
+  </ion-item>
+
+  <button ion-button round full class="next-button" icon-end large (click)="toBankPage()">Next
+    <img class="next-icon" src="../../assets/imgs/right-arrow.png">
+  </button>
+
+  <button ion-button round full class="next-button" large (click)="toCompanyPage()">
+    <img class="previous-icon" src="../../assets/imgs/left-arrow.png"> Previous
+  </button>
+  
+</ion-content>

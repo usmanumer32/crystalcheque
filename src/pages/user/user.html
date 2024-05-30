@@ -1,0 +1,39 @@
+<!--
+  Generated template for the UserPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-toolbar >
+            <ion-title class="adjusttitle">User</ion-title>  
+        <ion-buttons>
+            <button ion-button icon-only menuToggle  color= "light">
+              <ion-icon name="menu"></ion-icon>
+            </button>
+          </ion-buttons>  
+          <ion-title></ion-title>  
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list class="display">
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="../../assets/imgs/mark.png">
+              </ion-avatar>
+          <h2>My Neighbor Totoro</h2>
+          <p>Hayao Miyazaki • 1988</p>
+          <button item-end class="view" (click)="goToUserEditPage()">View</button>
+          
+        </ion-item>
+    </ion-list>
+
+    <ion-fab bottom right >
+        <button ion-fab mini (click)="goToUserAddPage()"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+
+
+</ion-content>

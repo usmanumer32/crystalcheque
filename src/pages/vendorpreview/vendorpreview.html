@@ -1,0 +1,75 @@
+<!Doctype html>
+<!--
+  Generated template for the VendorpreviewPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton>
+    <ion-buttons left>
+      <button ion-button (click)="goBack()">
+        <ion-icon class="customIcon" name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Vendor Preview</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="masters">
+
+  <ion-item class="masters" style="padding-top:5%">
+    <ion-label class="labelprev">Vendor</ion-label>
+  </ion-item>
+
+  <ion-grid class="grid">
+    <ion-item class="masters">
+      <ion-row>
+        <ion-col>ABYSINIYA BANK</ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-grid>
+
+  <ion-item class="masters">
+    <ion-label class="labelprev">Account Number</ion-label>
+    <ion-label class="labelprev">Manager</ion-label>
+  </ion-item>
+
+  <ion-grid class="grid">
+    <ion-item class="masters">
+      <ion-row>
+        <ion-col>VN0012345</ion-col>
+        <ion-col style="margin-left: 5%">Henok M.</ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-grid>
+
+  <ion-item class="masters">
+    <ion-label class="labelprev">Phone Number</ion-label>
+    <ion-label class="labelprev">Address</ion-label>
+  </ion-item>
+
+  <ion-grid class="grid">
+    <ion-item class="masters">
+      <ion-row>
+        <ion-col>+251-913-23-54-79</ion-col>
+        <ion-col style="margin-left: 5%">CMC</ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-grid>
+
+  <ion-fab right bottom>
+    <button ion-fab color="primary">
+      <ion-icon name="arrow-dropleft"></ion-icon>
+    </button>
+    <ion-fab-list side="left">
+      <button ion-fab color="secondary">
+        <ion-icon name="create"></ion-icon>
+      </button>
+      <button ion-fab color="danger">
+        <ion-icon name="trash"></ion-icon>
+      </button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>
